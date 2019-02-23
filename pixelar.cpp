@@ -1,5 +1,6 @@
-/*VILLAGOMEZ CHAVEZ LUIS FERNANDO
+/*Flores Molina Miguel de Jesús
 GRUPO:03
+Version 2017
 */
 #include <windows.h>
 #include <Gl/glut.h>
