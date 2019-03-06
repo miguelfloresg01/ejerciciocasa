@@ -1,5 +1,5 @@
 /*
-Flores Molina Miguel de Jesús
+Flores Molina Miguel de JesÃºs
 Version 2017
 PRACTICA #04
 INTRUCCIONES:
@@ -47,14 +47,14 @@ void InitGL(void)     // Inicializamos parametros
 void prisma(void)
 {
 	GLfloat vertice[8][3] = {
-				{0.5 ,-0.5, 0.5},    //Coordenadas Vértice 0 V0
-				{-0.5 ,-0.5, 0.5},    //Coordenadas Vértice 1 V1
-				{-0.5 ,-0.5, -0.5},    //Coordenadas Vértice 2 V2
-				{0.5 ,-0.5, -0.5},    //Coordenadas Vértice 3 V3
-				{0.5 ,0.5, 0.5},    //Coordenadas Vértice 4 V4
-				{0.5 ,0.5, -0.5},    //Coordenadas Vértice 5 V5
-				{-0.5 ,0.5, -0.5},    //Coordenadas Vértice 6 V6
-				{-0.5 ,0.5, 0.5},    //Coordenadas Vértice 7 V7
+				{0.5 ,-0.5, 0.5},    //Coordenadas VÃ©rtice 0 V0
+				{-0.5 ,-0.5, 0.5},    //Coordenadas VÃ©rtice 1 V1
+				{-0.5 ,-0.5, -0.5},    //Coordenadas VÃ©rtice 2 V2
+				{0.5 ,-0.5, -0.5},    //Coordenadas VÃ©rtice 3 V3
+				{0.5 ,0.5, 0.5},    //Coordenadas VÃ©rtice 4 V4
+				{0.5 ,0.5, -0.5},    //Coordenadas VÃ©rtice 5 V5
+				{-0.5 ,0.5, -0.5},    //Coordenadas VÃ©rtice 6 V6
+				{-0.5 ,0.5, 0.5},    //Coordenadas VÃ©rtice 7 V7
 	};
 
 	glBegin(GL_POLYGON);	//Front
@@ -105,7 +105,7 @@ void display(void)   // Creamos la funcion donde se dibuja
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);	// Limiamos pantalla y Depth Buffer
 	//glMatrixMode(GL_MODELVIEW);
 
-	//Poner Código Aquí.
+	//Poner CÃ³digo AquÃ­.
 	glLoadIdentity();
 	glTranslatef(transX, transY, transZ);
 	glRotatef(angY, 0, 1, 0);
@@ -113,7 +113,7 @@ void display(void)   // Creamos la funcion donde se dibuja
 								//Cabeza
 	glTranslatef(0, 2.0079, 0);
 	glColor3fv(blanco);
-	glScalef(1, 1, 1);//aumento el tamaño del cubo
+	glScalef(1, 1, 1);//aumento el tamaÃ±o del cubo
 	prisma();
 	
 	glLoadIdentity();
@@ -123,7 +123,7 @@ void display(void)   // Creamos la funcion donde se dibuja
 								//Cuello
 	glTranslatef(0, 1.255, 0);
 	glColor3fv(rosa);
-	glScalef(0.8, 0.5, 0.8);//aumento el tamaño del cubo
+	glScalef(0.8, 0.5, 0.8);//aumento el tamaÃ±o del cubo
 	prisma();
 
 	glLoadIdentity();
@@ -133,7 +133,7 @@ void display(void)   // Creamos la funcion donde se dibuja
 								//Cuerpo
 	glTranslatef(0, 0, 0);
 	glColor3fv(azul);
-	glScalef(2, 2, 2);//aumento el tamaño del cubo
+	glScalef(2, 2, 2);//aumento el tamaÃ±o del cubo
 	prisma();
 
 	glLoadIdentity();
@@ -143,7 +143,7 @@ void display(void)   // Creamos la funcion donde se dibuja
 	//Hombro verde derecho
 	glTranslatef(1.4, .6, 0);
 	glColor3fv(verde);
-	glScalef(.8, .8, .8);//aumento el tamaño del cubo
+	glScalef(.8, .8, .8);//aumento el tamaÃ±o del cubo
 	prisma();
 
 	glLoadIdentity();
@@ -153,7 +153,7 @@ void display(void)   // Creamos la funcion donde se dibuja
 	//Brazo parte amarilla derecho
 	glTranslatef(2.4, .6, 0);
 	glColor3fv(amarillo);
-	glScalef(1.2, .8, .8);//aumento el tamaño del cubo
+	glScalef(1.2, .8, .8);//aumento el tamaÃ±o del cubo
 	prisma();
 
 	glLoadIdentity();
@@ -163,7 +163,7 @@ void display(void)   // Creamos la funcion donde se dibuja
 	//Brazo parte rojo derecho
 	glTranslatef(3.6, .6, 0);
 	glColor3fv(rojo);
-	glScalef(1.2, .8, .8);//aumento el tamaño del cubo
+	glScalef(1.2, .8, .8);//aumento el tamaÃ±o del cubo
 	prisma();
 
 	glLoadIdentity();
@@ -173,7 +173,7 @@ void display(void)   // Creamos la funcion donde se dibuja
 	//Mano derecha 
 	glTranslatef(4.5, .6, 0);
 	glColor3fv(blanco);
-	glScalef(.6, .8, .8);//aumento el tamaño del cubo
+	glScalef(.6, .8, .8);//aumento el tamaÃ±o del cubo
 	prisma();
 	//-----------------------------Pie Derecho
 	glLoadIdentity();
@@ -183,7 +183,7 @@ void display(void)   // Creamos la funcion donde se dibuja
 	//Pie derecho 
 	glTranslatef(0.6, -1.6, 0);
 	glColor3fv(rojo);
-	glScalef(.8, 1.2, .8);//aumento el tamaño del cubo
+	glScalef(.8, 1.2, .8);//aumento el tamaÃ±o del cubo
 	prisma();
 
 	glLoadIdentity();
@@ -193,7 +193,7 @@ void display(void)   // Creamos la funcion donde se dibuja
 	//Pie derecho 
 	glTranslatef(0.6, -2.45, 0);
 	glColor3fv(verde);
-	glScalef(.8, .5, .8);//aumento el tamaño del cubo
+	glScalef(.8, .5, .8);//aumento el tamaÃ±o del cubo
 	prisma();
 
 	glLoadIdentity();
@@ -203,7 +203,7 @@ void display(void)   // Creamos la funcion donde se dibuja
 	//Pie derecho 
 	glTranslatef(0.6, -3.3, 0);
 	glColor3fv(azul);
-	glScalef(.8, 1.2, .8);//aumento el tamaño del cubo
+	glScalef(.8, 1.2, .8);//aumento el tamaÃ±o del cubo
 	prisma();
 
 	glLoadIdentity();
@@ -213,7 +213,7 @@ void display(void)   // Creamos la funcion donde se dibuja
 	//Pie derecho 
 	glTranslatef(.9, -4.15, 0);
 	glColor3fv(cafe);
-	glScalef(1.4, .5, .8);//aumento el tamaño del cubo
+	glScalef(1.4, .5, .8);//aumento el tamaÃ±o del cubo
 	prisma();
 	//////////////////////////////// Parte Izquierda
 	//--------------------------Mano Izquierda
@@ -224,7 +224,7 @@ void display(void)   // Creamos la funcion donde se dibuja
 	//Hombro verde izquierdo
 	glTranslatef(-1.4, .6, 0);
 	glColor3fv(verde);
-	glScalef(.8, .8, .8);//aumento el tamaño del cubo
+	glScalef(.8, .8, .8);//aumento el tamaÃ±o del cubo
 	prisma();
 
 	glLoadIdentity();
@@ -234,7 +234,7 @@ void display(void)   // Creamos la funcion donde se dibuja
 	//Brazo parte amarilla izquierda
 	glTranslatef(-2.4, .6, 0);
 	glColor3fv(amarillo);
-	glScalef(1.2, .8, .8);//aumento el tamaño del cubo
+	glScalef(1.2, .8, .8);//aumento el tamaÃ±o del cubo
 	prisma();
 
 	glLoadIdentity();
@@ -244,7 +244,7 @@ void display(void)   // Creamos la funcion donde se dibuja
 	//Brazo parte rojo izquierda
 	glTranslatef(-3.6, .6, 0);
 	glColor3fv(rojo);
-	glScalef(1.2, .8, .8);//aumento el tamaño del cubo
+	glScalef(1.2, .8, .8);//aumento el tamaÃ±o del cubo
 	prisma();
 
 	glLoadIdentity();
@@ -254,7 +254,7 @@ void display(void)   // Creamos la funcion donde se dibuja
 	//Mano izquierdo 
 	glTranslatef(-4.5, .6, 0);
 	glColor3fv(blanco);
-	glScalef(.6, .8, .8);//aumento el tamaño del cubo
+	glScalef(.6, .8, .8);//aumento el tamaÃ±o del cubo
 	prisma();
 	//-------------------Pie Izquierdo
 	glLoadIdentity();
@@ -264,7 +264,7 @@ void display(void)   // Creamos la funcion donde se dibuja
 	//Pie izquierdo 
 	glTranslatef(-0.6, -1.6, 0);
 	glColor3fv(rojo);
-	glScalef(.8, 1.2, .8);//aumento el tamaño del cubo
+	glScalef(.8, 1.2, .8);//aumento el tamaÃ±o del cubo
 	prisma();
 
 	glLoadIdentity();
@@ -274,7 +274,7 @@ void display(void)   // Creamos la funcion donde se dibuja
 	//Pie izquierdo 
 	glTranslatef(-0.6, -2.45, 0);
 	glColor3fv(verde);
-	glScalef(.8, .5, .8);//aumento el tamaño del cubo
+	glScalef(.8, .5, .8);//aumento el tamaÃ±o del cubo
 	prisma();
 
 	glLoadIdentity();
@@ -284,7 +284,7 @@ void display(void)   // Creamos la funcion donde se dibuja
 	//Pie izquierdo 
 	glTranslatef(-0.6, -3.3, 0);
 	glColor3fv(azul);
-	glScalef(.8, 1.2, .8);//aumento el tamaño del cubo
+	glScalef(.8, 1.2, .8);//aumento el tamaÃ±o del cubo
 	prisma();
 
 	glLoadIdentity();
@@ -294,7 +294,7 @@ void display(void)   // Creamos la funcion donde se dibuja
 	//Pie izquierdo 
 	glTranslatef(-.9, -4.15, 0);
 	glColor3fv(cafe);
-	glScalef(1.4, .5, .8);//aumento el tamaño del cubo
+	glScalef(1.4, .5, .8);//aumento el tamaÃ±o del cubo
 	prisma();
 
 	glutSwapBuffers();
@@ -385,15 +385,15 @@ int main(int argc, char** argv)   // Main Function
 	glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH); // Display Mode (Clores RGB y alpha | Buffer Doble )
 	screenW = glutGet(GLUT_SCREEN_WIDTH);
 	screenH = glutGet(GLUT_SCREEN_HEIGHT);
-	glutInitWindowSize(1200, 1200);	// Tamaño de la Ventana
+	glutInitWindowSize(1200, 1200);	// TamaÃ±o de la Ventana
 	glutInitWindowPosition(0, 0);	//Posicion de la Ventana
 	glutCreateWindow("Practica 4"); // Nombre de la Ventana
 	printf("Resolution H: %i \n", screenW);
 	printf("Resolution V: %i \n", screenH);
 	InitGL();						// Parametros iniciales de la aplicacion
-	glutDisplayFunc(display);  //Indicamos a Glut función de dibujo
-	glutReshapeFunc(reshape);	//Indicamos a Glut función en caso de cambio de tamano
-	glutKeyboardFunc(keyboard);	//Indicamos a Glut función de manejo de teclado
+	glutDisplayFunc(display);  //Indicamos a Glut funciÃ³n de dibujo
+	glutReshapeFunc(reshape);	//Indicamos a Glut funciÃ³n en caso de cambio de tamano
+	glutKeyboardFunc(keyboard);	//Indicamos a Glut funciÃ³n de manejo de teclado
 	glutSpecialFunc(arrow_keys);	//Otras
 	glutMainLoop();          // 
 
