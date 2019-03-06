@@ -1,4 +1,4 @@
-/*Flores Molina Miguel de Jes˙s
+/*Flores Molina Miguel de Jes√∫s
 Version 2017
 PRACTICA #03
 INTRUCCIONES:
@@ -31,18 +31,18 @@ void inicializar(void)
 	glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
 }
 
-//funciÛn para dibujar un cubo a partir de polÌgonos
+//funci√≥n para dibujar un cubo a partir de pol√≠gonos
 void prisma(void)
 {
 	GLfloat vertice[8][3] = {
-	 { 0.5 ,-0.5, 0.5 },    //Coordenadas VÈrtice 0 V0
-	{ -0.5 ,-0.5, 0.5 },    //Coordenadas VÈrtice 1 V1
-	{ -0.5 ,-0.5, -0.5 },    //Coordenadas VÈrtice 2 V2
-	{ 0.5 ,-0.5, -0.5 },    //Coordenadas VÈrtice 3 V3
-	{ 0.5 ,0.5, 0.5 },    //Coordenadas VÈrtice 4 V4
-	{ 0.5 ,0.5, -0.5 },    //Coordenadas VÈrtice 5 V5
-	{ -0.5 ,0.5, -0.5 },    //Coordenadas VÈrtice 6 V6
-	{ -0.5 ,0.5, 0.5 },    //Coordenadas VÈrtice 7 V7
+	 { 0.5 ,-0.5, 0.5 },    //Coordenadas V√©rtice 0 V0
+	{ -0.5 ,-0.5, 0.5 },    //Coordenadas V√©rtice 1 V1
+	{ -0.5 ,-0.5, -0.5 },    //Coordenadas V√©rtice 2 V2
+	{ 0.5 ,-0.5, -0.5 },    //Coordenadas V√©rtice 3 V3
+	{ 0.5 ,0.5, 0.5 },    //Coordenadas V√©rtice 4 V4
+	{ 0.5 ,0.5, -0.5 },    //Coordenadas V√©rtice 5 V5
+	{ -0.5 ,0.5, -0.5 },    //Coordenadas V√©rtice 6 V6
+	{ -0.5 ,0.5, 0.5 },    //Coordenadas V√©rtice 7 V7
 	};
 
 	glBegin(GL_POLYGON); //Enfrente
@@ -61,7 +61,7 @@ void prisma(void)
 	glVertex3fv(vertice[4]);
 	glEnd();
 
-	glBegin(GL_POLYGON); //Atr·s
+	glBegin(GL_POLYGON); //Atr√°s
 	glColor3fv(negro);
 	glVertex3fv(vertice[6]);
 	glVertex3fv(vertice[5]);
@@ -96,14 +96,14 @@ void prisma(void)
 void prismaR(void)
 {
 	GLfloat vertice[8][3] = {
-	 { 0.5 ,-0.5, 0.5 },    //Coordenadas VÈrtice 0 V0
-	{ -0.5 ,-0.5, 0.5 },    //Coordenadas VÈrtice 1 V1
-	{ -0.5 ,-0.5, -0.5 },    //Coordenadas VÈrtice 2 V2
-	{ 0.5 ,-0.5, -0.5 },    //Coordenadas VÈrtice 3 V3
-	{ 0.5 ,0.5, 0.5 },    //Coordenadas VÈrtice 4 V4
-	{ 0.5 ,0.5, -0.5 },    //Coordenadas VÈrtice 5 V5
-	{ -0.5 ,0.5, -0.5 },    //Coordenadas VÈrtice 6 V6
-	{ -0.5 ,0.5, 0.5 },    //Coordenadas VÈrtice 7 V7
+	 { 0.5 ,-0.5, 0.5 },    //Coordenadas V√©rtice 0 V0
+	{ -0.5 ,-0.5, 0.5 },    //Coordenadas V√©rtice 1 V1
+	{ -0.5 ,-0.5, -0.5 },    //Coordenadas V√©rtice 2 V2
+	{ 0.5 ,-0.5, -0.5 },    //Coordenadas V√©rtice 3 V3
+	{ 0.5 ,0.5, 0.5 },    //Coordenadas V√©rtice 4 V4
+	{ 0.5 ,0.5, -0.5 },    //Coordenadas V√©rtice 5 V5
+	{ -0.5 ,0.5, -0.5 },    //Coordenadas V√©rtice 6 V6
+	{ -0.5 ,0.5, 0.5 },    //Coordenadas V√©rtice 7 V7
 	};
 
 	glBegin(GL_POLYGON); //Enfrente
@@ -122,7 +122,7 @@ void prismaR(void)
 	glVertex3fv(vertice[4]);
 	glEnd();
 
-	glBegin(GL_POLYGON); //Atr·s
+	glBegin(GL_POLYGON); //Atr√°s
 	glColor3fv(rojo);
 	glVertex3fv(vertice[6]);
 	glVertex3fv(vertice[5]);
@@ -157,14 +157,14 @@ void prismaR(void)
 void prismamarillo(void)
 {
 	GLfloat vertice[8][3] = {
-	 { 0.5 ,-0.5, 0.5 },    //Coordenadas VÈrtice 0 V0
-	{ -0.5 ,-0.5, 0.5 },    //Coordenadas VÈrtice 1 V1
-	{ -0.5 ,-0.5, -0.5 },    //Coordenadas VÈrtice 2 V2
-	{ 0.5 ,-0.5, -0.5 },    //Coordenadas VÈrtice 3 V3
-	{ 0.5 ,0.5, 0.5 },    //Coordenadas VÈrtice 4 V4
-	{ 0.5 ,0.5, -0.5 },    //Coordenadas VÈrtice 5 V5
-	{ -0.5 ,0.5, -0.5 },    //Coordenadas VÈrtice 6 V6
-	{ -0.5 ,0.5, 0.5 },    //Coordenadas VÈrtice 7 V7
+	 { 0.5 ,-0.5, 0.5 },    //Coordenadas V√©rtice 0 V0
+	{ -0.5 ,-0.5, 0.5 },    //Coordenadas V√©rtice 1 V1
+	{ -0.5 ,-0.5, -0.5 },    //Coordenadas V√©rtice 2 V2
+	{ 0.5 ,-0.5, -0.5 },    //Coordenadas V√©rtice 3 V3
+	{ 0.5 ,0.5, 0.5 },    //Coordenadas V√©rtice 4 V4
+	{ 0.5 ,0.5, -0.5 },    //Coordenadas V√©rtice 5 V5
+	{ -0.5 ,0.5, -0.5 },    //Coordenadas V√©rtice 6 V6
+	{ -0.5 ,0.5, 0.5 },    //Coordenadas V√©rtice 7 V7
 	};
 
 	glBegin(GL_POLYGON); //Enfrente
@@ -183,7 +183,7 @@ void prismamarillo(void)
 	glVertex3fv(vertice[4]);
 	glEnd();
 
-	glBegin(GL_POLYGON); //Atr·s
+	glBegin(GL_POLYGON); //Atr√°s
 	glColor3fv(amarillo);
 	glVertex3fv(vertice[6]);
 	glVertex3fv(vertice[5]);
@@ -714,11 +714,11 @@ void teclado(unsigned char key, int x, int y)
 {
 	switch (key)
 	{
-	case'w':case'W':  //acerca al objeto con traslaciÛn en Z pos
+	case'w':case'W':  //acerca al objeto con traslaci√≥n en Z pos
 		transZ += 0.2f;
 		break;
 
-	case's':case'S':  //aleja al objeto con traslaciÛn en Z neg
+	case's':case'S':  //aleja al objeto con traslaci√≥n en Z neg
 		transZ -= 0.2f;
 		break;
 
@@ -780,15 +780,15 @@ int main(int argc, char *argv[])
 	glutCreateWindow("Carita ^_^");
 
 	inicializar();
-	//Llamada a la funciÛn a ser dibujada
+	//Llamada a la funci√≥n a ser dibujada
 	glutDisplayFunc(dibujar);
 	glutReshapeFunc(remodelar);
 
-	//Llamada a funciÛn que maneja eventos del teclado
+	//Llamada a funci√≥n que maneja eventos del teclado
 	glutKeyboardFunc(teclado);
 	glutSpecialFunc(teclasFlechas);
 
-	//LLamada a funciÛn que cede el control a GLUT y procesa eventos de
+	//LLamada a funci√≥n que cede el control a GLUT y procesa eventos de
 	glutMainLoop();
 
 	//Termina la ejecucion devolviendo cero
